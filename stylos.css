@@ -13,23 +13,24 @@
   --gris_oscuro:#111111;
   --blanco:#fff;
 }
+
+/* body */
 .sushi{
    font-family: "Raleway", sans-serif;
-  
 }
+/* header */
 .encabezado{
  background-color: var(--azul_ocuro);
  width: 100%;
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 0 2vw ;
+ padding: 0 4vw ;
 }
 
 .encabezado__logo{
    height: 4.2vw;
-   padding: 0.6vw;
-  
+   padding: -1.6vw; 
 }
 .encabezado__medio{
   gap:4vw;
@@ -38,11 +39,309 @@
 .encabezado__items{
   text-decoration: none;
   color: var(--blanco);
-  /* font-weight: 0.2vw; */
   font-size: 1.2rem;
 }
 .icono__search{
   color: var(--blanco);
   font-size: 1.9vw;
+}
+/* primera seccion */
+.presentacion__content{
+    background: linear-gradient(rgba(140, 60, -150, 0.5), rgba(0, 0, 0, 0)), url('recursos/Place-Your-Image-Here-\(Double-Click-to-Edit\)1.png');
+    background-size: cover;
+     background-position: center;
+    height: 50vw; 
+    width: 100%;
+    padding-top: 5vw;
+}
+.presentacion__texto{
+  width: 50vw;
+  padding: 0 2vw;
+}
+.presentacion__titulo{
+  color: var(--blanco);
+  font-size: 8vw;
+  margin-bottom: -2vw;
+  padding: 4vw;
+}
+.presentacion__parrafo{
+  color: var(--blanco);
+  font-size: 1.5vw;
+   margin-bottom: 3vw;
+   padding: 2vw;
+}
+
+.boton__texto{
+    display: flex;
+    background-color: var(--azul_ocuro);
+    font-size: 2vw;
+    color: var(--blanco);
+    /* padding:1 0 0 1vw; */
+    height: 3vw;
+    border-radius: 8vw;
+    width: 18vw;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+    text-align: center;
+}
+/* segunda seccion */
+.menu__container{
+  background-color: var(--azul_ocuro);
+  width: 100%;
+  height: 50vw;
+   align-items: center;
+}
+.menu__texto{
+ text-align: center;
+  padding: 0 6vw;
+  margin-bottom: 2vw;
+  padding-top: 3vw;
+}
+
+.menu__titulo{
+  color: var(--blanco);
+  font-size: 4vw;
+  margin-bottom: 2vw;
+  padding: 0 10vw;
+}
+
+.menu__parrafo{
+  color: var(--blanco);
+  margin-bottom: 5vw;
+  font-size: 1.5vw;
+  padding: 0 14vw;
+}
+
+/* ontenedor principal */
+.cards__container{
+  display: flex; /* Activa flexbox */
+  justify-content: center; /* Centra las cartas horizontalmente */
+}
+.cards__content {
+  width: 25%;
+}
+
+.card__menu {
+  display: flex; /* Activar flexbox */
+  flex-direction: column; /* Colocar los elementos en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente (si es necesario) */
+  text-align: center; /* Centrar el texto de los elementos hijos */
+}
+
+.card__foto {
+  border-radius: 50%;
+  width: 18vw;
+  /* margin-bottom: 1vw; */
+  padding: 2vw;
+}
+
+.card__titulo {
+  color: var(--blanco);
+  margin-bottom: 2vw;
+  padding: 0 2vw;
+}
+
+.card__parrafo {
+  color: var(--blanco);
+  padding: 0 2vw;
+}
+/* tercera sección */
+
+.promocion__container{
+  background-color: var(--piel);
+  width: 100%;
+  height: 50vw;
+  padding-top: 10vw;
+  display: flex;
+  justify-content: center;
+}
+.promocion__content{
+  padding: 0 12vw;
+}
+.promocion__foto{
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+}
+
+.promo__texto{
+  width: 47vw;
+}
+.promo__titulo--azul{
+  color: var(--azul_ocuro);
+  font-size: 4vw;
+  margin-bottom: 2vw;
+
+}
+.promo__parrafo--azul{
+  color: var(--azul_ocuro);
+  font-size: 1.6vw;
+  margin-bottom: 3vw;
+  padding: 1vw;
+}
+
+.boton__promo{
+    display: flex;
+    background-color: var(--azul_ocuro);
+    font-size: 2vw;
+    color: var(--blanco);
+    /* padding:1 0 0 1vw; */
+    height: 3vw;
+    border-radius: 8vw;
+    width: 16vw;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* cuarta sección  */
+.estadisticas__container{
+  background-color: var(--azul_ocuro);
+  width: 100%;
+  height: 50vw;
+  align-items: center;
+}
+.estadisticas__texto{
+ text-align: center;
+  padding: 0 6vw;
+  margin-bottom: 1vw;
+  padding-top: 4vw;
+}
+
+.estadisticas__titulo{
+  color: var(--blanco);
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 2vw;
+  padding: 0 10vw;
+  
+}
+
+.estadisticas__parrafo{
+  color: var(--blanco);
+  margin-bottom: 5vw;
+  font-size: 1.5vw;
+  padding: 0 14vw;
+}
+
+/* tarjetas */
+.tarjetas__container{
+ background-color: var(--azul_ocuro);
+   width: 78vw;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 11vw;
+  margin-left: 10vw;
+  margin-top: -5vw;
  
+}
+.tarjeta__store{
+  background-color: var(--azul_ocuro);
+  width: 17vw;
+  height: 17vw;
+  border: 4px solid var(--blanco);
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+.tarjeta__number{
+  font-size: 5vw;
+  font-weight: bold;
+  margin: 0;
+  color: var(--blanco);
+  padding-top: 3.5vw ;
+}
+.tarjeta__texto{
+  font-size: 3vw;
+  margin: 0;
+  color: var(--blanco);
+}
+
+/* quinta sección (componente) */
+.promotion__container{
+  background-color: var(--piel);
+  width: 100%;
+  height: 50vw;
+  padding-top: 10vw;
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+}
+
+.prom__texto{
+  width: 47vw;
+}
+.prom__titulo--azul{
+  color: var(--azul_ocuro);
+  font-size: 4vw;
+  margin-bottom: 2vw;
+
+}
+.prom__parrafo--azul{
+  color: var(--azul_ocuro);
+  font-size: 1.6vw;
+  margin-bottom: 3vw;
+  padding: 1vw;
+}
+
+.boton__prom{
+    display: flex;
+    background-color: var(--azul_ocuro);
+    font-size: 2vw;
+    color: var(--blanco);
+    /* padding:1 0 0 1vw; */
+    height: 3vw;
+    border-radius: 8vw;
+    width: 16vw;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+    text-align: center;
+}
+.promotion__content{
+  padding: -1 12vw;
+}
+.promotion__foto{
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+}
+
+/* sexta sección */
+.perfil__container{
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 51, 102, 0.8)), url('recursos/Place-Your-Image-Here-\(Double-Click-to-Edit\)71.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vw; 
+    width: 100%;
+     padding-top: 5vw;
+}
+.perfil__elementos{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.perfil__foto{
+  width: 17vw;
+  height: 17vw;
+  border-radius: 50%;
+}
+.perfil__parrafo{
+ font-size: 2vw;
+ color: var(--blanco);
+ padding: 3vw;
+}
+.perfil__titulo{
+  color: var(--blanco);
+  font-size: 3vw;
+  font-weight: bold;
+
 }
