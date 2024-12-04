@@ -48,7 +48,7 @@
 }
 /* primera seccion */
 .presentacion__content{
-    background: linear-gradient(rgba(140, 60, -150, 0.5), rgba(0, 0, 0, 0)), url('recursos/Place-Your-Image-Here-\(Double-Click-to-Edit\)1.png');/*Coloca una imagen de fondo con un efecto de degradado encima.*/
+    background-image: url(recursos/Imagen_de_fondo_sushi\ \(1\).jpeg);
     background-size: cover; /*Hace que la imagen cubra todo el área sin deformarse.*/
      background-position: center;/*Centra la imagen en el fondo.*/
     height: 50vw; /*Define qué tan alta es la sección.*/
@@ -114,18 +114,27 @@
   position: absolute;
   top: 70%;
   left: -4%;
-    /* width: 5vw; */
+    width: 10vw;
+}
+.cir__amare{
+  position: absolute;
+  top: 1%;
+  left: 91%;
+  width: 8vw;
+
 }
 .puntitos__amarillos{
   position: absolute;
   top: 50%;
   right: -3%;
   transform: rotate(90deg);
+  width: 10vw;
 }
 .tri__amarillo{
   position: absolute;
   top: 90%;
   right: 0%;
+    width: 5vw;
 }
 
 .menu__texto{
@@ -198,7 +207,7 @@
 .circulo__azul{
   position: absolute;
   top: 11%;
-  /* width: 5vw; */
+  width: 12vw;
   left: 10%;
 
 }
@@ -223,8 +232,8 @@
 .esfera__azul{
   position: absolute;
   top: 70%;
-  right: -3%;
-    /* width: 5vw; */
+  right: 0%;
+    width: 9vw;
 }
 .promocion__content{
   padding: 0 12vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
@@ -269,10 +278,47 @@
 
 /* cuarta sección  */
 .estadisticas__container{
+  position: relative;
   background-color: var(--azul_ocuro); /*Cambia el color de fondo.*/
   width: 100%;/*ocupa todo el ancho de la pantalla*/
   height: 50vw; /*Define qué tan alta es la sección.*/
   align-items: center;  /*Alinea los elementos al centro verticalmente.*/
+}
+.puntos__amarillos{
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 10vw;
+}
+.trian__amarillo{
+  position: absolute;
+  top: 30%;
+  left: 6%;
+  width: 5vw;
+}
+.circle__ama{
+  position: absolute;
+  top: 87%;
+  left: 25%;
+   width: 10vw;
+}
+.points__amarillos{
+  position: absolute;
+  top: 85%;
+  left: 60%;
+  width: 10vw;
+}
+.triangu__ama{
+  position: absolute;
+  top: 83%;
+  left: 90%;
+  width: 5vw;
+}
+.circu__ama{
+  position: absolute;
+  top: 9%;
+  left: 85%;
+   width: 10vw;
 }
 .estadisticas__texto{
  text-align: center; /* Centrar el texto de los elementos hijos */
@@ -334,6 +380,7 @@
 
 /* quinta sección (componente) */
 .promotion__container{
+  position: relative;
   background-color: var(--piel); /*Cambia el color de fondo.*/
   width: 100%; /*ocupa todo el ancho de la pantalla*/
   height: 50vw; /*Define qué tan alta es la sección.*/
@@ -341,6 +388,40 @@
   display: flex; /* Activar flexbox */
   justify-content: center; /* Centrar el contenedor */
   gap: 7vw; /* Deja espacio entre elementos.*/
+}
+/* figuras */
+.tri__azul{
+  position: absolute;
+  top: 11%;
+  left: 10%;
+  width: 5vw;
+
+}
+.points__azules{
+  position: absolute;
+  top: 0% ; 
+  right: 56%;
+  width: 5vw;
+  transform: rotate(90deg); 
+}
+.circle__azul{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 12vw;
+}
+.punti__azules{
+  position: absolute;
+  top: 63% ; 
+  right: 3%;
+  width: 5vw;
+}
+.esfera__blue{
+  position: absolute;
+  top: 68%;
+  left: 35%;
+  width: 12vw;
+
 }
 
 .prom__texto{
@@ -377,6 +458,7 @@
   padding: -1 12vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 .promotion__foto{
+  position: relative;
   border-radius: 50%; /*Redondea los bordes, creando círculos o esquinas suaves.*/
   width: 25vw; /*Define qué tan anchos son los elementos.*/
   height: 25vw; /*Define qué tan alta es la sección.*/
@@ -384,7 +466,7 @@
 
 /* sexta sección */
 .perfil__container{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 51, 102, 0.8)), url('recursos/Place-Your-Image-Here-\(Double-Click-to-Edit\)71.png');/*Coloca una imagen de fondo con un efecto de degradado encima.*/
+    background-image: url(recursos/Fondo_azul_sushi\ \(1\).jpg);
     background-size: cover; /*Hace que la imagen cubra todo el área sin deformarse.*/
     background-position: center; /*Centra la imagen en el fondo.*/
     height: 50vw; /*Define qué tan alta es la sección.*/
@@ -392,26 +474,138 @@
     padding-top: 5vw; /*Deja espacio arriba de los elementos.*/
 }
 .perfil__elementos{
-  width: 100vw; /*Define qué tan anchos son los elementos.*/
+  width: 100%; /*Define qué tan anchos son los elementos.*/
   display: flex; /* Activar flexbox */
   flex-direction: column; /* Colocar los elementos en columna */
   justify-content: center; /* Centrar el contenedor */
   align-items: center;  /*Alinea los elementos al centro verticalmente.*/
   text-align: center; /* Centrar el texto de los elementos hijos */
+   padding: 7vw 17vw;
 }
 .perfil__foto{
   width: 17vw; /*Define qué tan anchos son los elementos.*/
   height: 17vw; /*Define qué tan alta es la sección.*/
   border-radius: 50%; /*Redondea los bordes, creando círculos o esquinas suaves.*/
+    margin-bottom: 3vw;
 }
 .perfil__parrafo{
  font-size: 2vw; /*Cambia el tamaño del texto.*/
  color: var(--blanco);  /*Cambia el color del texto.*/
- padding: 3vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
+  margin-bottom: 3vw;
+ 
 }
 .perfil__titulo{
   color: var(--blanco); /*Cambia el color del texto.*/
   font-size: 3vw; /*Cambia el tamaño del texto.*/
   font-weight: bold; /* Hace el texto más grueso.*/
 
+}
+/* septima sección */
+.email__container{
+  position: relative;
+  background-color: var(--piel);
+  width: 100%; /*ocupa todo el ancho de la pantalla*/
+  height: 50vw; /*Define qué tan alta es la sección.*/
+  padding: 7vw 17vw;
+  /* display: flex; */
+  text-align: center;
+}
+/* figuras */
+.punt__azules{
+  position: absolute;
+  top: 6% ; 
+  left: 6%; 
+   width: 5vw;
+  transform: rotate(90deg); 
+}
+.lineat__azul{
+  position: absolute;
+  top: 12%;
+   /* width: 5vw; */
+   right: 20%;
+}
+.cir__azul{
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  width: 9vw;
+}
+.line__azul{
+  position: absolute;
+  top: 84%;
+  left: 5%;
+  width: 5vw;
+}
+.circul__azul{
+  position: absolute;
+  top: 73%;
+  width: 12vw;
+  left: 44%;
+}
+.pun__azules{
+  position: absolute;
+  top: 69%;
+  right: 5%;
+  width: 5vw;
+}
+
+.title__principal{
+  color: var(--azul_ocuro);  /*Cambia el color del texto.*/
+  font-size: 4vw; /*Cambia el tamaño del texto.*/
+  margin-bottom: 2vw; /*Deja espacio debajo.*/
+  padding-top: 4vw;
+}
+.parrafo__email{
+   color: var(--azul_ocuro);  /*Cambia el color del texto.*/
+  font-size: 1.6vw; /*Cambia el tamaño del texto.*/
+  margin-bottom: 3vw; /*Deja espacio debajo.*/
+  padding: 1vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
+}
+
+/* input */
+
+.email__content{
+  display:flex;
+  align-items: center;
+  /* flex: 0 1 680px; factor de crecimiento */
+  padding: 10vw;
+  padding-top: 3vw;
+}
+.form__email{
+  position: relative;
+  width: 100%;
+  display: flex; 
+}
+.input__email{
+  height: 3vw;
+  width: 36vw;
+  background-color: var(--blanco);
+  color: var(--gris_oscuro);
+  padding: 2%;
+  outline: none;
+  border: 1vw solid rgba(255, 255, 255,0.1);
+  border-radius:5vw ;
+  font-size: 1.5vw;
+}
+.boton__email{
+  position: absolute;
+  width: 9vw;
+  height: 3.7vw;
+  background-color: var(--azul_ocuro);
+  color: var(--blanco);
+  outline: none;
+  border: none;
+  border-radius: 5vw;
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: bold;
+  right: 4vw;
+  text-transform: uppercase;
+}
+
+/* octava sección */
+.info__container{
+  background-color: var(--blanco);
+  width: 100%; /*ocupa todo el ancho de la pantalla*/
+  height: 50vw; /*Define qué tan alta es la sección.*/
 }
