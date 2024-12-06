@@ -33,21 +33,21 @@
    height: 4.2vw; /*Define qué tan alta es la sección.*/
    padding: -1.6vw;   /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
-.encabezado__medio{
+.encabezadomedio{
   gap:4vw; /* Deja espacio entre elementos.*/
   display: flex; /*Organiza los elementos dentro del botón de forma ordenada.*/
 }
-.encabezado__items{
+.encabezadomedio__items{
   text-decoration: none; /*Quita subrayados en el texto.*/
   color: var(--blanco); /*Cambia el color del texto.*/
   font-size: 1.3vw; /*Cambia el tamaño del texto.*/
 }
-.icono__search{
+.encabezadoderecha__search{
   color: var(--blanco);  /*Cambia el color del texto.*/
   font-size: 1.9vw; /*Cambia el tamaño del texto.*/
 }
 /* primera seccion */
-.presentacion__content{
+.presentacion{
     background-image: url(recursos/Imagen_de_fondo_sushi\ \(1\).jpeg);
     background-size: cover; /*Hace que la imagen cubra todo el área sin deformarse.*/
      background-position: center;/*Centra la imagen en el fondo.*/
@@ -85,10 +85,10 @@
     text-transform: uppercase;  /*transforma el texto en mayúsculas*/
     text-align: center; /* Centrar el texto de los elementos hijos */
     font-weight: bold; /* Hace el texto más grueso.*/
-    margin: 3vw;
+    margin: 3vw; /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 /* segunda seccion */
-.menu__container{
+.menu{
   position: relative;
   background-color: var(--azul_ocuro); /*Cambia el color de fondo.*/
   width: 100%; /*ocupa todo el ancho de la pantalla*/
@@ -98,47 +98,47 @@
 
 
 /* figuras */
-.circulos__amarillos{
+.menu__circulos{
    position: absolute;
-   top: 2%;
-   left: 20%;
-  width: 10vw;
+   top: 2%; /*Mueve el elemento hacia abajo desde su posición original*/
+   left: 20%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 10vw; /*Define qué tan anchos son los elementos.*/
    
 }
-.triangulo__amarillo{
+.menu__triangulo{
    position: absolute;
-   top: 18%;
-   left: 5%;
-   width: 5vw;
+   top: 18%; /*Mueve el elemento hacia abajo desde su posición original*/
+   left: 5%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+   width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.circulo__amarillo{
+.menu__circulo{
   position: absolute;
-  top: 70%;
-  left: -4%;
-    width: 10vw;
+  top: 70%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: -4%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 10vw; /*Define qué tan anchos son los elementos.*/
 }
-.cir__amare{
+.menu__cir{
   position: absolute;
-  top: 1%;
-  left: 91%;
-  width: 8vw;
+  top: 1%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 91%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 8vw; /*Define qué tan anchos son los elementos.*/
 
 }
-.puntitos__amarillos{
+.menu__puntitos{
   position: absolute;
-  top: 50%;
-  right: -3%;
+  top: 50%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: -3%; /*Mueve el elemento hacia la derecha desde su posición original*/
   transform: rotate(90deg);
-  width: 10vw;
+  width: 10vw; /*Define qué tan anchos son los elementos.*/
 }
-.tri__amarillo{
+.menu__tri{
   position: absolute;
-  top: 90%;
-  right: 0%;
-    width: 5vw;
+  top: 90%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 0%;/*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
 
-.menu__texto{
+.menutexto{
  text-align: center; /* Centrar el texto de los elementos hijos */
   padding: 0 6vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
   margin-bottom: 2vw; /*Deja espacio debajo.*/
@@ -146,14 +146,14 @@
  
 }
 
-.menu__titulo{
+.menutexto__titulo{
   color: var(--blanco);  /*Cambia el color del texto.*/
   font-size: 4vw; /*Cambia el tamaño del texto.*/
   margin-bottom: 2vw; /*Deja espacio debajo.*/
   padding: 0 10vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 
-.menu__parrafo{
+.menutexto__parrafo{
   color: var(--blanco);  /*Cambia el color del texto.*/
   margin-bottom: 5vw; /*Deja espacio debajo.*/
   font-size: 1.5vw; /*Cambia el tamaño del texto.*/
@@ -161,15 +161,15 @@
 }
 
 /* contenedor principal */
-.cards__container{
+.cards{
   display: flex; /* Activa flexbox */
   justify-content: center; /* Centra las cartas horizontalmente */
 }
-.cards__content {
+.cardscontent {
   width: 25%; /*ocupa el ancho de la pantalla*/
 }
 
-.card__menu {
+.cardscontent__menu {
   display: flex; /* Activar flexbox */
   flex-direction: column; /* Colocar los elementos en columna */
   align-items: center; /* Centrar horizontalmente */
@@ -177,28 +177,28 @@
   text-align: center; /* Centrar el texto de los elementos hijos */
 }
 
-.card__foto {
+.cardscontent__foto {
   border-radius: 50%; /*Redondea los bordes, creando círculos o esquinas suaves.*/
   width: 18vw; /*Define qué tan anchos son los elementos.*/
   padding: 2vw; /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 
-.card__titulo {
+.cardscontent__titulo {
   color: var(--blanco);  /*Cambia el color del texto.*/
   margin-bottom: 2vw; /*Deja espacio debajo.*/
   padding: 0 2vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
-  font-size: 2vw;
+   font-size: 2vw; /*ajusta el tamaño de la fuente */
 }
 
-.card__parrafo {
+.cardscontent__parrafo {
   color: var(--blanco);  /*Cambia el color del texto.*/
   padding: 0 2vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
-  font-size: 1vw;
+  font-size: 1vw; /*ajusta el tamaño de la fuente */
 }
 /* tercera sección */
 
-.promocion__container{
-  position: relative;
+.promocioncontainer{
+   position: relative;/* posición relativa */
   background-color: var(--piel); /*Cambia el color de fondo.*/
   width: 100%; /*ocupa todo el ancho de la pantalla*/
   height: 50vw; /*Define qué tan alta es la sección.*/
@@ -207,42 +207,42 @@
   justify-content: center; /* Centrar el contenedor */
 }
 /* figuras */
-.circulo__azul{
-  position: absolute;
-  top: 11%;
-  width: 12vw;
-  left: 10%;
+.promocioncontainer__circulo{
+  position: absolute; /* posición absoluta */
+  top: 11%; /*Mueve el elemento hacia abajo desde su posición original*/
+  width: 12vw; /*Define qué tan anchos son los elementos.*/
+  left: 10%; /*Mueve el elemento hacia la izquierda desde su posición original*/
 
 }
-.puntos__azules{
-  position: absolute;
-  top: 73%;
-  left: 2%;
-  width: 5vw;
+.promocioncontent__puntos{
+  position: absolute; /* posición absoluta */
+  top: 73%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 2%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.puntitos__azul{
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  width: 5vw;
+.promocioncontent__puntitos{
+  position: absolute; /* posición absoluta */
+  top: 2%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 2%; /*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.triangulo__azul{
-  position: absolute;
-  top: 10%;
-  right: 42%;
-  width: 5vw;
+.promocioncontent__triangulo{
+  position: absolute; /* posición absoluta */
+  top: 10%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 42%; /*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.esfera__azul{
-  position: absolute;
-  top: 70%;
-  right: 0%;
-    width: 9vw;
+.promocioncontainer__esfera{
+  position: absolute; /* posición absoluta */
+  top: 70%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 0%; /*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 9vw; /*Define qué tan anchos son los elementos.*/
 }
-.promocion__content{
+.promocioncontent{
   padding: 0 12vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
-.promocion__foto{
-  position: relative;
+.promocioncontent__foto{
+  position: relative; /* posición relativa */
   border-radius: 50%; /*Redondea los bordes, creando círculos o esquinas suaves.*/
   width: 25vw; /*Define qué tan anchos son los elementos.*/
   height: 25vw; /*Define qué tan alta es la sección.*/
@@ -264,7 +264,7 @@
   padding: 1vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 
-.boton__promo{
+.promo__boton{
     display: flex; /*Organiza los elementos en fila..*/
     background-color: var(--azul_ocuro); /*Cambia el color de fondo.*/
     font-size: 1.3vw; /*Cambia el tamaño del texto.*/
@@ -280,48 +280,48 @@
 }
 
 /* cuarta sección  */
-.estadisticas__container{
-  position: relative;
+.estadisticas{
+  position: relative; /* posición relativa */
   background-color: var(--azul_ocuro); /*Cambia el color de fondo.*/
   width: 100%;/*ocupa todo el ancho de la pantalla*/
   height: 50vw; /*Define qué tan alta es la sección.*/
   align-items: center;  /*Alinea los elementos al centro verticalmente.*/
 }
-.puntos__amarillos{
-  position: absolute;
-  top: 7%;
-  left: 5%;
-  width: 10vw;
+.estadisticas__puntos{
+  position: absolute; /* posición absoluta */
+  top: 7%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 5%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 10vw; /*Define qué tan anchos son los elementos.*/
 }
-.trian__amarillo{
-  position: absolute;
-  top: 30%;
-  left: 6%;
-  width: 5vw;
+.estadisticas__trian{
+  position: absolute; /* posición absoluta */
+  top: 30%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 6%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.circle__ama{
-  position: absolute;
-  top: 87%;
-  left: 25%;
-   width: 10vw;
+.estadisticas__circle{
+  position: absolute; /* posición absoluta */
+  top: 87%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 25%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+   width: 10vw; /*Define qué tan anchos son los elementos.*/
 }
-.points__amarillos{
-  position: absolute;
-  top: 85%;
-  left: 60%;
-  width: 10vw;
+.estadisticas__points{
+  position: absolute; /* posición absoluta */
+  top: 85%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 60%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 10vw; /*Define qué tan anchos son los elementos.*/
 }
-.triangu__ama{
-  position: absolute;
-  top: 83%;
-  left: 90%;
-  width: 5vw;
+.estadisticas__triangu{
+  position: absolute; /* posición absoluta */
+  top: 83%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 90%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.circu__ama{
-  position: absolute;
-  top: 9%;
-  left: 85%;
-   width: 10vw;
+.estadisticas__circu{
+  position: absolute; /* posición absoluta */
+  top: 9%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 85%;/*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 10vw; /*Define qué tan anchos son los elementos.*/
 }
 .estadisticas__texto{
  text-align: center; /* Centrar el texto de los elementos hijos */
@@ -347,7 +347,7 @@
 }
 
 /* tarjetas */
-.tarjetas__container{
+.tarjetas{
  background-color: var(--azul_ocuro); /*Cambia el color de fondo.*/
    width: 78vw; /*ocupa el ancho de la pantalla*/
   height: 30vw; /*Define qué tan alta es la sección.*/
@@ -360,7 +360,7 @@
   margin-top: -5vw;  /*Deja espacio arriba.*/
  
 }
-.tarjeta__store{
+.tarjeta{
   background-color: var(--azul_ocuro); /*Cambia el color de fondo.*/
   width: 17vw; /*ocupa el ancho de la pantalla*/
   height: 17vw; /*Define qué tan alta es la sección.*/
@@ -382,8 +382,8 @@
 }
 
 /* quinta sección (componente) */
-.promotion__container{
-  position: relative;
+.promotion{
+  position: relative; /* posición relativa */
   background-color: var(--piel); /*Cambia el color de fondo.*/
   width: 100%; /*ocupa todo el ancho de la pantalla*/
   height: 50vw; /*Define qué tan alta es la sección.*/
@@ -393,37 +393,37 @@
   gap: 7vw; /* Deja espacio entre elementos.*/
 }
 /* figuras */
-.tri__azul{
-  position: absolute;
-  top: 11%;
-  left: 10%;
-  width: 5vw;
+.promotion__tri{
+  position: absolute; /* posición absoluta */
+  top: 11%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 10%;/*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 
 }
-.points__azules{
-  position: absolute;
-  top: 0% ; 
-  right: 56%;
-  width: 5vw;
+.promotion__points{
+  position: absolute; /* posición absoluta */
+  top: 0% ; /*Mueve el elemento hacia arriba desde su posición original*/
+  right: 56%; /*Mueve el elemento hacia la derecha de su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
   transform: rotate(90deg); 
 }
-.circle__azul{
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 12vw;
+.promotion__circle{
+  position: absolute; /* posición absoluta */
+  top: 10%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 5%; /*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 12vw; /*Define qué tan anchos son los elementos.*/
 }
-.punti__azules{
-  position: absolute;
-  top: 63% ; 
-  right: 3%;
-  width: 5vw;
+.promotion__punti{
+  position: absolute; /* posición absoluta */
+  top: 63% ; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 3%;/*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.esfera__blue{
-  position: absolute;
-  top: 68%;
-  left: 35%;
-  width: 12vw;
+.promotion__esfera{
+  position: absolute; /* posición absoluta */
+  top: 68%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 35%;/*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 12vw; /*Define qué tan anchos son los elementos.*/
 
 }
 
@@ -443,7 +443,7 @@
   padding: 1vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 
-.boton__prom{
+.prom__boton{
     display: flex; /*Organiza los elementos en fila..*/
     background-color: var(--azul_ocuro); /*Cambia el color de fondo.*/
     font-size: 1.3vw; /*Cambia el tamaño del texto.*/
@@ -457,18 +457,18 @@
     text-align: center; /* Centrar el texto de los elementos hijos */
     font-weight: bold; /* Hace el texto más grueso.*/
 }
-.promotion__content{
+.prom{
   padding: -1 12vw;  /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 .promotion__foto{
-  position: relative;
+  position: relative; /* posición relativa */
   border-radius: 50%; /*Redondea los bordes, creando círculos o esquinas suaves.*/
   width: 25vw; /*Define qué tan anchos son los elementos.*/
   height: 25vw; /*Define qué tan alta es la sección.*/
 }
 
 /* sexta sección */
-.perfil__container{
+.perfil{
     background-image: url(recursos/Fondo_azul_sushi\ \(1\).jpg);
     background-size: cover; /*Hace que la imagen cubra todo el área sin deformarse.*/
     background-position: center; /*Centra la imagen en el fondo.*/
@@ -483,18 +483,18 @@
   justify-content: center; /* Centrar el contenedor */
   align-items: center;  /*Alinea los elementos al centro verticalmente.*/
   text-align: center; /* Centrar el texto de los elementos hijos */
-   padding: 7vw 17vw;
+   padding: 7vw 17vw; /*Ajusta los espacios alrededor o dentro de los elementos.*/
 }
 .perfil__foto{
   width: 17vw; /*Define qué tan anchos son los elementos.*/
   height: 17vw; /*Define qué tan alta es la sección.*/
   border-radius: 50%; /*Redondea los bordes, creando círculos o esquinas suaves.*/
-    margin-bottom: 3vw;
+  margin-bottom: 3vw; /*deja un espacio debajo*/
 }
 .perfil__parrafo{
  font-size: 2vw; /*Cambia el tamaño del texto.*/
  color: var(--blanco);  /*Cambia el color del texto.*/
-  margin-bottom: 3vw;
+  margin-bottom: 3vw; /*deja un espacio debajo*/
  
 }
 .perfil__titulo{
@@ -504,61 +504,60 @@
 
 }
 /* septima sección */
-.email__container{
-  position: relative;
+.email{
+  position: relative;/*posición relativa*/
   background-color: var(--piel);
   width: 100%; /*ocupa todo el ancho de la pantalla*/
   height: 50vw; /*Define qué tan alta es la sección.*/
-  padding: 7vw 17vw;
-  /* display: flex; */
-  text-align: center;
+  padding: 7vw 17vw; /*Ajusta los espacios alrededor o dentro de los elementos.*/
+  text-align: center; /*centra el texto*/
 }
 /* figuras */
-.punt__azules{
-  position: absolute;
-  top: 6% ; 
-  left: 6%; 
-   width: 5vw;
+.email__punt{
+  position: absolute;/*posición absoluta.*/
+  top: 6% ; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 6%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
   transform: rotate(90deg); 
 }
-.lineat__azul{
-  position: absolute;
-  top: 12%;
-   width: 5vw;
-   right: 20%;
+.email__lineat{
+  position: absolute;/*posición absoluta.*/
+  top: 12%; /*Mueve el elemento hacia abajo desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
+  right: 20%;/*Mueve el elemento hacia la derecha desde su posición original*/
 }
-.cir__azul{
-  position: absolute;
-  top: 2%;
-  right: 0%;
-  width: 9vw;
+.email__cir{
+  position: absolute; /*posición absoluta.*/
+  top: 2%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 0%;/*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 9vw; /*Define qué tan anchos son los elementos.*/
 }
-.line__azul{
-  position: absolute;
-  top: 84%;
-  left: 5%;
-  width: 5vw;
+.email__line{
+  position: absolute; /*posición absoluta.*/
+  top: 84%; /*Mueve el elemento hacia abajo desde su posición original*/
+  left: 5%; /*Mueve el elemento hacia la izquierda desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
-.circul__azul{
-  position: absolute;
+.email__circul{
+  position: absolute; /*posición absoluta.*/
   top: 73%; /*Mueve el elemento hacia abajo desde su posición original*/
-  width: 12vw;
+  width: 12vw; /*Define qué tan anchos son los elementos.*/
   left: 44%; /* Mueve el elemento hacia la derecha desde su posición original */
 }
-.pun__azules{
-  position: absolute;
-  top: 69%;
-  right: 5%;
-  width: 5vw;
+.email__pun{
+  position: absolute; /*posición absoluta.*/
+  top: 69%; /*Mueve el elemento hacia abajo desde su posición original*/
+  right: 5%; /*Mueve el elemento hacia la derecha desde su posición original*/
+  width: 5vw; /*Define qué tan anchos son los elementos.*/
 }
 
-.title__principal{
+.emailtitle{
   color: var(--azul_ocuro);  /*Cambia el color del texto.*/
   font-size: 4vw; /*Cambia el tamaño del texto.*/
   margin-bottom: 2vw; /*Deja espacio debajo.*/
-  padding-top: 4vw;
+  padding-top: 4vw; /*Deja espacio arriba de los elementos.*/
 }
-.parrafo__email{
+.emailtitle__parrafo{
    color: var(--azul_ocuro);  /*Cambia el color del texto.*/
   font-size: 1.6vw; /*Cambia el tamaño del texto.*/
   margin-bottom: 3vw; /*Deja espacio debajo.*/
@@ -567,63 +566,62 @@
 
 /* input */
 
-.email__content{
-  display:flex;
-  align-items: center;
-  /* flex: 0 1 680px; factor de crecimiento */
-  padding: 10vw;
-  padding-top: 3vw;
+.emailcon{
+  display:flex; /*Activar Flexbox.*/
+  align-items: center; /*alinea los items hacia el centro.*/
+  padding: 10vw; /*Ajusta los espacios alrededor o dentro de los elementos.*/
+  padding-top: 3vw;/*Deja espacio arriba de los elementos.*/
 }
-.form__email{
-  position: relative;
-  width: 100%;
-  display: flex; 
+.emailcon__form{
+  position: relative;/*posición relativa.*/
+  width: 100%; /*ocupa todo el ancho de la pantalla*/
+  display: flex; /*Activar Flexbox.*/
 }
-.input__email{
-  height: 3vw;
-  width: 36vw;
-  background-color: var(--blanco);
-  color: var(--gris_oscuro);
-  padding: 2%;
+.emailcon__input{
+  height: 3vw; /*Define qué tan alta es la sección.*/
+  width: 36vw; /*Define qué tan anchos son los elementos.*/
+  background-color: var(--blanco); /*le asigna color al fondo.*/
+  color: var(--gris_oscuro); /*le asigna color a la fuente.*/
+  padding: 2%; /*Ajusta los espacios alrededor o dentro de los elementos.*/
   outline: none; /* Elimina el contorno al seleccionar */
   border: 1vw solid rgba(255, 255, 255,0.1);
-  border-radius:5vw ;
-  font-size: 1.5vw;
+  border-radius:5vw ; /*asigna bordes redondos*/
+  font-size: 1.5vw;/*tamaño para la fuente.*/
 }
-.boton__email{
+.emailcon__boton{
   position: absolute;
-  width: 9vw;
-  height: 3.7vw;
-  background-color: var(--azul_ocuro);
-  color: var(--blanco);
-  outline: none;
-  border: none;
-  border-radius: 5vw;
-  cursor: pointer;
-  font-size: 1vw;
-  font-weight: bold;
-  right: 4vw;
-  text-transform: uppercase;
+  width: 9vw; /*Define qué tan anchos son los elementos.*/
+  height: 3.7vw; /*Define qué tan alta es la sección.*/
+  background-color: var(--azul_ocuro); /*le asigna color al fondo.*/
+  color: var(--blanco);/*le asigna color a la fuente.*/
+  outline: none; /* Elimina el contorno al seleccionar */
+  border: none; /*sin borde.*/
+  border-radius: 5vw;  /*asigna bordes redondos*/
+  cursor: pointer; /*cuando se pone el cursor aparece la manita de click*/
+  font-size: 1vw; /*tamaño para la fuente.*/
+  font-weight: bold; /*asigna a la fuente un tamaño grueso.*/
+  right: 4vw; /*Mueve el elemento hacia la derecha desde su posición original*/
+  text-transform: uppercase; /*trnasforma el texto en mayúsculas.*/
 }
 
 /* octava sección */
-.info__container{
-  background-color: var(--gris_oscuro);
-  color: var(--blanco);
+.infocon{
+  background-color: var(--gris_oscuro); /*le asigna color al fondo.*/
+  color: var(--blanco); /*le asigna color a la fuente.*/
   width: 100%; /*ocupa todo el ancho de la pantalla*/
   height: 50vw; /*Define qué tan alta es la sección.*/
-  display: grid;
+  display: grid; /* Activa grid*/
   grid-template-columns: 2fr 1fr 1fr 1fr;; /* 4 columnas */
-  padding-top: 15vw;
-  gap: 10vw;
-  font-size: 1.5vw;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-top: 15vw; /*espacio hacia arriba.*/
+  gap: 10vw; /* Deja espacio entre elementos.*/
+  font-size: 1.5vw; /*tamaño para la fuente.*/
+  padding-left: 4vw; /*espacio a la izquierda.*/
+  padding-right: 4vw; /*espacio a la derecha.*/
 }
-.info__titulo{
+.infocon__titulo{
   margin-bottom: 2vw; /*Deja espacio debajo.*/ 
 }
-.info__parrafo{
+.infocon__parrafo{
    margin-bottom: 2vw; /*Deja espacio debajo.*/ 
 }
 .info__texto{
@@ -631,10 +629,193 @@
 }
 .info__items{
   margin-bottom: 1vw; /*Deja espacio debajo.*/
-   list-style: none;
-   font-size: 1.5vw;
+   list-style: none; /*quita los estilos de la lista del texto*/
+   font-size: 1.5vw; /*tamaño para la fuente.*/
 }
-.iconos__info{
-  gap: 1vw;
-  width: 3vw;
+.infoiconos__re{
+  gap: 1vw; /* Deja espacio entre elementos.*/
+  width: 3vw; /*Define qué tan anchos son los elementos.*/
+}
+
+/* ------------------------------media query------------------------------------ */
+
+/* primera sección */
+@media(max-width: 800px ){
+.promotion,.promocioncontainer,.presentacion,.perfil,.email,.infocon{
+    width: 100%;
+    height: 100vw;
+    
+  }
+  .encabezadomedio{
+    display: none;
+  }
+ 
+  .presentacion__texto{
+    padding-top: 13vw;
+    margin-left: 27vw;
+    text-align: center;
+  }
+  .presentacion__parrafo{
+    font-size: 4.2vw; 
+    padding: 2vw;
+  }
+  .boton__texto,.promo__boton,.prom__boton{
+    width: 34vw;
+    height: 6vw;
+    font-size: 2vw;
+  }
+  .encabezado{
+   height: 10vw;
+  }
+  .encabezado__logo{
+    width: 29vw;
+    height: 11vw;
+    
+  }
+  .encabezadoderecha__search{
+    font-size: 6vw;
+  }
+  .cards,.promocioncontainer,.tarjetas,.promotion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+}
+
+/* segunda sección */
+@media(max-width: 800px){
+  .promotion__esfera{
+    display: none;
+  }
+
+  .prom{
+    display: flex;
+    align-items: center;
+  }
+  .menutexto{
+    padding-top: 14vw;
+  }
+
+  .menutexto__titulo,.prom__titulo--azul,.estadisticas__titulo,.prom__titulo--azul,.perfil__titulo,.emailtitle,.infocon__titulo,.info__texto{
+    font-size: 5vw;
+  }
+  .menutexto__parrafo,.promo__parrafo--azul,.estadisticas__parrafo,.prom__parrafo--azul,.perfil__parrafo,.emailtitle__parrafo,.infocon__parrafo,.info__items{
+    font-size: 3vw;
+  }
+  .cardscontent__foto{
+    width: 29vw;
+  }
+  .cardscontent__titulo{
+    font-size: 5vw;
+  }
+  .cardscontent__parrafo{
+    font-size: 3vw;
+    padding-bottom: 5vw;
+  }
+  .menu,.estadisticas,.infocon{
+    width: 100%;
+    height: 200vw;
+  }
+  .cardscontent__menu{
+    width: 83vw;
+    margin-left: -28vw;
+  }
+}
+
+/* tercera sección */
+@media (max-width: 800px){
+  .promocioncontent{
+    margin-bottom: 8vw;
+  }
+  .promocioncontent__foto,.promotion__foto{
+    width: 29vw;
+  }
+  .promo__boton{
+    margin-left: 6vw;
+  }
+}
+
+/* cuarta sección */
+@media (max-width: 800px){
+
+  .estadisticas__texto {
+    padding-bottom: 48vw;
+    padding-top: 20vw;
+  }
+  .tarjeta__number{
+    text-align: center;
+    font-size: 7vw;
+    
+    
+  }
+  .tarjeta__texto{
+    text-align: center;
+    padding-bottom: 5vw;
+    font-size: 5vw;
+  }
+  .tarjeta{
+    width: 23vw;
+    height: 24vw;
+  }
+
+}
+
+/* quinta sección */
+@media (max-width: 800px){
+  .prom__boton{
+    margin-left: 6vw;
+  }
+}
+
+/* sexta sección */
+@media (max-width: 800px){
+  .perfil{
+    padding-top: 18vw;
+  }
+  .perfil__foto{
+    width: 28vw;
+    height: 28vw;
+  
+  }
+}
+
+/* septima sección */
+@media (max-width: 800px){
+  .email{
+    padding-top: 24vw;
+  }
+  .emailcon__input{
+    width: 37vw;
+    height: 6vw;
+    font-size: 3vw;
+  }
+  .emailcon__boton{
+    width: 11vw;
+    height: 6vw;
+    font-size: 1.4vw;
+  }
+}
+
+/* octava sección */
+@media (max-width: 800px){
+  .infocon {
+    grid-template-columns: 1fr; /* Una columna */
+    grid-template-areas:
+      "title"
+      "about"
+      "services"
+      "other"; /* Reordena los elementos */
+    height: auto; /* Ajusta la altura automáticamente */
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    
+  }
+  .infoiconos__re{
+    width: 5vw;
+  }
 }
